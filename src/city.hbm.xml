@@ -4,13 +4,16 @@
      "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
       
      <hibernate-mapping>  
-      <class name="Employee" table="emp1000">  
-        <id name="id">  
+      <class name="City" table="City">  
+        <id name="CityID">  
          <generator class="assigned"></generator>  
         </id>  
-                
-        <property name="firstName"></property>  
-        <property name="lastName"></property>  
+        <property name="Country"></property>
+        <property name="Region"></property>  
+        <property name="City"></property>
+        <property name="PostalCode"></property>  
+        <property name="Latitude"></property>
+        <property name="Longitude"></property>  
                 
       </class>  
                 

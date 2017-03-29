@@ -7,12 +7,13 @@
       
         <session-factory>  
             <property name="hbm2ddl.auto">update</property>  
-            <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>  
-            <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
-            <property name="connection.username">system</property>  
-            <property name="connection.password">oracle</property>  
-            <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  
-        <mapping resource="employee.hbm.xml"/>  
+            <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+            <property name="connection.url">jdbc:mysql://localhost/geocity</property>  
+            <property name="connection.username">root</property>  
+            <property name="connection.password">root</property>  
+            <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+        <mapping resource="city.hbm.xml"/>  
+        
         </session-factory>  
       
     </hibernate-configuration>
